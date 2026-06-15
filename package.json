@@ -1,0 +1,19 @@
+{
+  "name": "zcode-bridge-gateway",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "ZCode API Bridge Gateway with Aliyun Captcha Automation",
+  "main": "src/cli.js",
+  "scripts": {
+    "start": "node src/cli.js serve"
+  },
+  "dependencies": {
+    "cloakbrowser": "^0.3.31",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "playwright-core": "^1.60.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

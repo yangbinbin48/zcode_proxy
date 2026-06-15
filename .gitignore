@@ -1,0 +1,12 @@
+node_modules/
+zcode.zip
+zcode_oauth_result.json
+bizToken.txt
+.env
+*.log
+.ai_memory/
+extracted_*/
+.hermes/
+zcode.tar.gz
+*.exe
+$PLUGINSDIR
