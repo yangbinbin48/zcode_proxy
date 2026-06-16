@@ -55,7 +55,7 @@ async function sendMessages(providerId, body, verifyParam, headers = {}) {
     ...authHeader,
     'anthropic-version': '2023-06-01',
     'User-Agent': config.userAgent,
-    'X-ZCode-App-Version': '3.0.1',
+    'X-ZCode-App-Version': config.appVersion,
     'X-ZCode-Agent': 'glm',
     'HTTP-Referer': 'https://zcode.z.ai/'
   };

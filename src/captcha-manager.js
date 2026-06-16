@@ -31,7 +31,7 @@ export class CaptchaManager {
 
     try {
       console.log('[Captcha] 正在从 ZCode 官方拉取最新配置...');
-      const res = await fetch('https://zcode.z.ai/api/v1/client/configs?app_version=3.0.0&platform=win32');
+      const res = await fetch(`https://zcode.z.ai/api/v1/client/configs?app_version=${config.appVersion}&platform=win32`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const json = await res.json();
       const captchaConfig = json.data?.configs?.captcha;
